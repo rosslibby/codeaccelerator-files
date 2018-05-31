@@ -26,6 +26,12 @@ main {
   padding: 8px;
 }
 
+main .column {
+  box-sizing: content-box;
+  display: inline-block;
+  width: 50%;
+}
+
 main p {
   font-size: 14px;
   margin: 0;
