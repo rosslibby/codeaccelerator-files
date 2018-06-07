@@ -1,0 +1,99 @@
+<html>
+  <body>
+    <h1>Lesson 5: More CSS</h1>
+    <h2>Margins &amp; Padding</h2>
+    <h3>Margins</h3>
+    <p>We can space out HTML elements using margins. A margin is a space around an element.</p>
+    <pre>
+      <code>
+<hr style="margin: 0; padding: 0;" /><span style="display: block; margin-top: -15px; margin-left: -12px;">____________________________
+|                           |
+|  Element with no margin   |
+|___________________________|</span>
+
+
+        Now use the CSS property "margin" to add a margin around the element
+
+        .my-class {
+          margin: 30px;
+        }
+
+
+
+        _________________________
+        |                        |
+        |  Element with margin   |
+        |________________________|
+        <hr />
+      </code>
+    </pre>
+
+    <h3>Padding</h3>
+    <p>Padding adds size to an element instead of just putting space around it.</p>
+    <pre>
+      <code>
+        <a href="#" style="font-family: sans-serif; text-transform: capitalize; background-color: #2e2e2e; border-radius: 4px; box-shadow: 0 0 8px 0 rgba(0, 0, 0, .4); color: white; text-decoration: none;">button with no padding</a>
+
+
+        Now use the CSS property "padding" to add padding (the left number deals with top/bottom padding, the right number deals with left/right padding)
+
+        .my-class {
+          padding: 8px 12px;
+        }
+
+
+        <a href="#" style="font-family: sans-serif; text-transform: capitalize; background-color: #2e2e2e; border-radius: 4px; box-shadow: 0 0 8px 0 rgba(0, 0, 0, .4); color: white; text-decoration: none; padding: 8px 12px;">button with padding</a>
+      </code>
+    </pre>
+    <p>That's the exact same code in each button, but one is obviously more readable than the other.</p>
+
+    <h2>Borders</h2>
+    <p>Borders are just outlines on elements. Here, I'll show you.</p>
+    <pre>
+      <code>
+        <div>This is a div with no border</div>
+
+
+        Now use the CSS property "border" to add a border. You need to specify the following three things in this property's value:
+
+        size (in pixels)
+        style (dotted/dashed/solid/double/groove/ridge/inset/outset)
+        color
+
+        We'll be going with 1 pixel (1px), solid, and black (#000000)
+
+        .my-class {
+          border: 1px solid #000000;
+        }
+
+        <div style="border: 1px solid black">This is a div with a border</div>
+      </code>
+    </pre>
+
+    <h2>Width &amp; Height</h2>
+    <p>See how the div with the border fills up the whole page? Unless we specify that the div should not fill the entire page, <i>it always will</i>.</p>
+    <p>We can get around this by using the CSS <i>width</i> and <i>height</i> properties.</p>
+    <pre>
+      <code>
+        <div style="background-color: #2e2e2e; color: #ffffff;">This is a div with no width or height</div>
+
+        Now use the CSS property "width" to set the width. You can set it in pixels (px) or as a percentage (%). We'll set it to 50% for now.
+
+        .my-class {
+          width: 50%;
+        }
+
+        <div style="background-color: #2e2e2e; color: #ffffff; width: 50%;">This is a div with a width but no height</div>
+
+        Ok so that's pretty cool, but it's still VERY short. Let's add a height using the CSS property "height". This time we'll use pixels instead of a percentage. Let's do 100px. And let's keep the width we set previously.
+
+        .my-class {
+          width: 50%;
+          height: 100px;
+        }
+
+        <div style="background-color: #2e2e2e; color: #ffffff; width: 50%; height: 100px;">This is a div with a width and a height</div>
+      </code>
+    </pre>
+  </body>
+</html>
