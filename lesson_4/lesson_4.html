@@ -1,0 +1,60 @@
+<html>
+  <body>
+    <h1>Lesson 4: An intro to CSS</h1>
+    <h2>What is CSS?</h2>
+    <p>CSS stands for <b>C</b>ascading <b>S</b>tyle <b>S</b>heets</p>
+    <p>While <b>HTML</b> is used to describe the <i>content</i> of a webpage, <b>CSS</b> is used to present the content. In other words it makes things look good.</p>
+    <h2>CSS Classes</h2>
+    <p>CSS can interact with the HTML that you write through something called a <i>class</i>. A class is a structure that contains various <i>properties</i> and can be applied to a range of elements. This means that I can make multiple parts of the HTML look the same without writing code over and over.</p>
+    <p>A CSS class name must always start with a dot. Example:</p>
+    <pre>
+      <code>.my-classname</code>
+    </pre>
+    <p>
+      A CSS class will always have braces in which its <i>properties</i> will reside.
+    </p>
+    <pre>
+      <code>
+        .my-classname {
+        }
+      </code>
+    </pre>
+    <p>CSS <i>properties</i> will go between the braces. <b>Properties</b> are rules that anything within that specific CSS class will follow.</p>
+    <pre>
+      <code>
+        .text--red {
+          color: #ff0000;
+        }
+      </code>
+    </pre>
+    <h2>How to mix CSS with HTML</h2>
+    <p>Just writing CSS itself doesn't do anything. We must also include the CSS file in the HTML. We do this using linked files like we learned about in lesson 2.</p>
+    <pre>
+      <code>
+        &lt;html>
+          &lt;head>
+            &lt;link rel="stylesheet" href="style.css" />
+          &lt;/head>
+        &lt;/html>
+      </code>
+    </pre>
+    <p>This still doesn't do anything. We have to actually make sure that our HTML knows that the CSS classes exist, otherwise they won't take affect.</p>
+    <pre>
+      <code>
+        &lt;body>
+          &lt;div class="text--red">
+            <p>This is some exciting text</p>
+          &lt;/div>
+        &lt;/body>
+      </code>
+    </pre>
+    <style>
+      .text--red {
+        color: #ff0000;
+      }
+    </style>
+    <div class="text--red">
+      <p>This is some exciting text</p>
+    </div>
+  </body>
+</html>
